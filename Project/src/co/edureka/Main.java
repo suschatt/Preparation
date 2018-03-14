@@ -8,9 +8,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext("context.xml");
-		Student s2=context.getBean("stud2",Student.class);
-		s2.sayHello();
-		((ConfigurableApplicationContext)context).close();
+		Student st1=context.getBean("stud1",Student.class);
+		st1.hello();
+		((ConfigurableApplicationContext) context).close();
+
 	}
 
 }
