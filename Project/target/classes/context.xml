@@ -5,10 +5,11 @@
 
 	
 
-	<bean id="stud1" class="co.edureka.Student" scope="singleton">
+	<bean id="stud1" class="co.edureka.Student" scope="singleton" init-method="myinit">
 		<property name="name" value="susmit"></property>
 	</bean>
 	<bean id="stud2" class="co.edureka.Student">
 		<constructor-arg value="chatterjee"></constructor-arg>
 	</bean>
+	<bean class="co.edureka.Processor"></bean>
 </beans>

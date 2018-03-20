@@ -28,4 +28,8 @@ public class Student {
 		System.out.println("Inside Hello Method");
 		System.out.println("Hello, "+name);
 	}
+	
+	public void myinit() {
+		System.out.println("Inside Init Method");
+	}
 }
